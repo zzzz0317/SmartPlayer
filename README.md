@@ -23,16 +23,16 @@
 ```c#
 // SmartPlayerForm.cs
 switch (args.Length) {
-	case 0:
-		textBox_url.Text = "";
-		break;
-	case 1:
+    case 0:
+        textBox_url.Text = "";
+        break;
+    case 1:
         textBox_url.Text = "rtmp://10.99.0.250/live/" + args[0].ToString();
         break;
-	case 2:
+    case 2:
         textBox_url.Text = args[0].ToString() + args[1].ToString();
         break;
-	default:
+    default:
         MessageBox.Show("参数错误");
         break;
 }
